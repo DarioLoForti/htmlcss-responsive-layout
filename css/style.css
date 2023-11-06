@@ -9,13 +9,14 @@ header{
 
 .container{
     max-width: 100%;
-    margin: 30px;
+    margin:0px 30px;
 }
 
 .row{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
 }
 .content-h{
     width: 100%;
@@ -29,6 +30,7 @@ header{
     padding: 30px;
     
 }
+
 .content-s{
     width: 100%;
     border-radius: 20px;
@@ -102,10 +104,9 @@ button{
     background-color: #0084FD;
     border-radius: 20px;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 100px;
     color: white;
-    text-align: center;
-    align-items: center;
+    margin: 20px auto;
 }
 span{
     margin-left: 5px;
@@ -113,15 +114,93 @@ span{
 .content-m>img{
     width: 100%;
 }
+.fa-2xs{
+    font-size: 20px;
+}
+.i{
+    font-size: 50px;
+    padding: 30px;
+}
 .content-s>img{
     width: 100%; 
-    border-radius: 50%;
-    padding: 20px 100px 0px 100px;
 }
-.t-center>h2{
-    color: #0084FD;
+.content-s>h4{
+    padding: 20px;
+}
+.fa-circle-arrow-down{
+    padding: 70px;
+}
+.b-radius{
+    border-radius: 50%;
+    padding: 20px;  
 }
 
+.color{
+    color: #0084FD;
+}
+.color-w{
+    color: white;
+}
+.color-p{
+    color: #9792E4;
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+.color-g{
+    color: lightgray;
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+.color-o{
+    color: #FDC15F;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+h2.color-p{
+    font-size: 50px;
+}
+h4, .color-p{
+    font-size: 25px;
+}
+.bg-w button{
+    background-color: #9792E4;
+    font-size: 25px;
+    padding: 10px 50px;
+    border-radius: 50px;
+}
+.bg-w>img{
+    border-radius: 50%;
+    width: 50%;
+}
+.content> .color-w{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.col-100> p, ul{
+    color: white;
+    line-height: 1.5;
+}
+.content> button{
+    background-color: white;
+    color: #9792E4;
+    font-size: 25px;
+}
+li{
+    margin: 7px;
+}
+li>a{
+    color: white;
+}
+.content>p{
+    color: white;
+    padding: 20px;
+}
+.content>a{
+    color: #9792E4;
+}
+p>a{
+    color: #9792E4;
+}
 
 /* MEDIA QUERY */
 
@@ -163,4 +242,5 @@ span{
         max-width: 1200px;
         margin: 0 auto;
     }
+   
 }
