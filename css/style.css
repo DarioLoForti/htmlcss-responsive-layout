@@ -36,6 +36,11 @@ header{
     border-radius: 20px;
     line-height: 2;
 }
+.content-s1{
+    width: 100%;
+    border-radius: 20px;
+    line-height: 2;
+}
 .bg{
     background-color: #9792E4;
 }
@@ -131,6 +136,9 @@ span{
 .content-s>img{
     width: 100%; 
 }
+.content-s1>img{
+    width: 100%; 
+}
 .content-s>h4{
     padding: 20px;
 }
@@ -171,8 +179,8 @@ h4, .color-p{
 }
 .bg-w button{
     background-color: #9792E4;
-    font-size: 25px;
-    padding: 10px 50px;
+    font-size: 20px;
+    padding: 5px 50px;
     border-radius: 50px;
 }
 .bg-w>img{
@@ -199,7 +207,7 @@ h4, .color-p{
     width: 100%;
 }
 li{
-    margin: 7px;
+    margin: 8px;
 }
 li>a{
     color: white;
@@ -214,10 +222,29 @@ li>a{
 p>a{
     color: #9792E4;
 }
-
+.after{
+    display: none;
+}
+.col-30>.bg-w{
+    position: relative;
+}
+.bg-w> i{
+    position: absolute;
+    left: 38%;
+    top: 8%;
+    font-size: 40px;
+}
+.col-100.d-flex{
+    align-items: center;
+    justify-content: space-between;
+}
+ul.d-flex{
+    margin-left: 10px;
+}
 /* MEDIA QUERY */
 
 @media screen and (min-width: 768px){
+  
     .container{
         max-width: 700px;
         margin: 0 auto;
@@ -256,27 +283,49 @@ p>a{
     .content-m>img{
         width: 50%;
     }
-    .content-s>img{
+    .content-s1>img{
         width: 100%;
     }
-    .content-s {
+    .content-s1 {
         display: flex;
+
+    }
+    .image>img{
+        width: 50%;
+        margin: 0px;
+    }
+    .content-s1>p{
+        display: none;
+    }
+    .after{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .bg-w> button{
+        background-color: #9792E4;
+        font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 50px;
+        margin: 0px; 
+    }
+    .col-100.d-flex{
+        align-items: center;
+        justify-content: center;
     }
 }
+
 @media screen and (min-width: 1200px){
+   
     .container{
         max-width: 1000px;
         margin: 0px auto;
     }
-    .content-m{
-        content: "";
-        display: table;
-        clear: right;
-    }
+    
    
     .image>img{
-        width: 50%;
-        float: right;
+        width: 100%;
+        position: absolute;
     }
     .content-h>ul{
         display: flex;
@@ -295,6 +344,22 @@ p>a{
     background-color: white;
     color: black;
    }
-
-
+   .before{
+    display: none;
+   }
+   .after{
+   justify-content: space-between;
+  
+flex-direction: row;   }
+   .text{
+    flex-wrap: wrap;
+    width: calc(100% / 2)
+   }
+   .content-s1>img{
+    width: 50%;
+}
+.image{
+    width:calc(100% / 2);
+    position: relative;
+}
 }
