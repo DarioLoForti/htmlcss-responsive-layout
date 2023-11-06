@@ -313,6 +313,15 @@ ul.d-flex{
         align-items: center;
         justify-content: center;
     }
+    .before{
+        display: none;
+       }
+    .after{
+        justify-content: space-between;  
+    }
+    .content-s1>.after{
+        text-align: initial;
+    }
 }
 
 @media screen and (min-width: 1200px){
@@ -348,18 +357,23 @@ ul.d-flex{
     display: none;
    }
    .after{
-   justify-content: space-between;
-  
-flex-direction: row;   }
+   justify-content: space-between;  
+    }
    .text{
     flex-wrap: wrap;
     width: calc(100% / 2)
    }
    .content-s1>img{
     width: 50%;
-}
-.image{
+    }
+    .image{
     width:calc(100% / 2);
     position: relative;
-}
+    }
+    .content-m{
+        flex-direction: row; 
+    }
+    .content-s1>.after{
+        text-align: initial;
+    }
 }
