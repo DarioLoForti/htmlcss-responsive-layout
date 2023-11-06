@@ -259,6 +259,9 @@ p>a{
     .content-s>img{
         width: 100%;
     }
+    .content-s {
+        display: flex;
+    }
 }
 @media screen and (min-width: 1200px){
     .container{
