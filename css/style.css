@@ -66,6 +66,10 @@ header{
     width: calc(100% - 20px);
     margin: 10px;
 }
+.col-34{
+    width: calc(100% - 20px);
+    margin: 10px;
+}
 .col-50{
     width: calc(100% -20px);
     margin: 10px;
@@ -107,6 +111,9 @@ button{
     padding: 10px 100px;
     color: white;
     margin: 20px auto;
+}
+.content-h>ul{
+    display: none;
 }
 span{
     margin-left: 5px;
@@ -185,6 +192,12 @@ h4, .color-p{
     color: #9792E4;
     font-size: 25px;
 }
+.image{
+    width: 100%;
+}
+.image>img{
+    width: 100%;
+}
 li{
     margin: 7px;
 }
@@ -204,9 +217,10 @@ p>a{
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
     .container{
-        max-width: 767px;
+        max-width: 700px;
+        margin: 0 auto;
     }
     .f-direction{
         flex-direction: row;
@@ -216,31 +230,68 @@ p>a{
         margin: 10px;
     }
     .col-66{
-        width: calc(66% - 20px);
+        width: calc(100% / 3 * 2 - 20px);
+        margin: 10px;
+    }
+    .col-34{
+        width: calc(100% / 3 - 20px);
         margin: 10px;
     }
     .col-33{
-        width: calc(33% - 20px);
+        width: calc(50% - 20px);
         margin: 10px;
     }
     .col-50{
-        width: calc(100% / 2 -20px);
+        width: calc(100% / 2 - 20px);
         margin: 10px;
     }
     .col-70{
-        width: calc(70% -20px);
+        width: calc(60% - 20px);
         margin: 10px;
     }
     .col-30{
-        width: calc(30% -20px);
+        width: calc(40% - 20px);
         margin: 10px;
     }
-
+    .content-m>img{
+        width: 50%;
+    }
+    .content-s>img{
+        width: 100%;
+    }
 }
-@media screen and (min-width: 798px){
+@media screen and (min-width: 1200px){
     .container{
-        max-width: 1200px;
-        margin: 0 auto;
+        max-width: 1000px;
+        margin: 0px auto;
+    }
+    .content-m{
+        content: "";
+        display: table;
+        clear: right;
     }
    
+    .image>img{
+        width: 50%;
+        float: right;
+    }
+    .content-h>ul{
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    .col-33{
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+   .content-h>i{
+    display: none;
+   }
+   li>button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+   }
+
+
 }
