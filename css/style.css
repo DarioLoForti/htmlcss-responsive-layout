@@ -316,6 +316,9 @@ ul.d-flex{
     .before{
         display: none;
        }
+       .text{
+        display: block;
+       }
     .after{
         justify-content: space-between;  
     }
